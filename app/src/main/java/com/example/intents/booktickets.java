@@ -50,7 +50,7 @@ public class booktickets extends AppCompatActivity {
         dateButton = (Button)findViewById(R.id.date_button);
         timeButton = (Button)findViewById(R.id.time_button);
         bookTicket = (Button)findViewById(R.id.bookTicket_button);
-        acToggle = (ToggleButton)findViewById(R.id.nonactoggle);
+//        acToggle = (ToggleButton)findViewById(R.id.nonactoggle);
         type = (SwitchCompat)findViewById(R.id.actoggle);
         fabbtn = (FloatingActionButton)findViewById(R.id.fabbtn);
         alarmfab = (FloatingActionButton)findViewById(R.id.add_alarm_fab);
@@ -61,7 +61,6 @@ public class booktickets extends AppCompatActivity {
         alarmfab.setVisibility(View.GONE);
         personfab.setVisibility(View.GONE);
         alarm.setVisibility(View.GONE);
-        personfab.setVisibility(View.GONE);
         isAllFabVisible = false;
         dateButton.setOnClickListener(new View.OnClickListener() {
             @Override

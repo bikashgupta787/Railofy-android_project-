@@ -23,3 +23,4 @@ public class SpalshscreenActivity extends AppCompatActivity {
         },2000);
     }
 }
+
