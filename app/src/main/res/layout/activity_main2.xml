@@ -4,136 +4,189 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rail2"
+    android:background="#CCCCFF"
     tools:context=".MainActivity2">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="127dp"
-        android:layout_height="80dp"
-        android:text="Book Tickets"
-        android:textSize="18sp"
-        android:onClick="btnClickAct3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+<!--    <Button-->
+<!--        android:id="@+id/button4"-->
+<!--        android:layout_width="127dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:text="Book Tickets"-->
+<!--        android:textSize="18sp"-->
+<!--        android:onClick="btnClickAct3"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.126"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.37" />-->
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="207dp"
-        android:layout_height="86dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="btnClickAct2"
-        android:text="CONTACT US"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.863" />
+<!--    <Button-->
+<!--        android:id="@+id/button2"-->
+<!--        android:layout_width="207dp"-->
+<!--        android:layout_height="86dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:onClick="btnClickAct2"-->
+<!--        android:text="CONTACT US"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.863" />-->
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="136dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:textColor="#03A9F4"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.768"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.012" />
+    <!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="127dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:text="Find Trains"-->
+<!--        android:textSize="18sp"-->
+<!--        android:onClick="btnClickAct5"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.816"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.37" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button5"-->
+<!--        android:layout_width="127dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:text="Live Status"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.112"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.576" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button6"-->
+<!--        android:layout_width="127dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:text="PNR Status"-->
+<!--        android:onClick="btnClickAct4"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.816"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.576" />-->
+
+
+    <!--    <FrameLayout-->
+<!--        android:id="@+id/frameLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@id/bottom_nav"-->
+<!--        tools:layout_editor_absoluteX="-44dp"-->
+<!--        tools:layout_editor_absoluteY="201dp" >-->
+
+    <!--    </FrameLayout>-->
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="131dp"
-        android:layout_height="54dp"
+        android:layout_width="322dp"
+        android:layout_height="62dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="WELCOME "
-        android:textColor="#03A9F4"
+        android:fontFamily="@font/candal"
+        android:text="WELCOME TO RAILOFY"
+        android:textAlignment="center"
+        android:textColor="#070707"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintVertical_bias="0.362" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="127dp"
-        android:layout_height="80dp"
-        android:text="Find Trains"
-        android:textSize="18sp"
-        android:onClick="btnClickAct5"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="265dp"
+        android:layout_height="65dp"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:fontFamily="@font/candal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="411dp"
+        android:layout_height="174dp"
+        android:layout_marginBottom="252dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/train_amico" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="127dp"
-        android:layout_height="80dp"
-        android:text="Live Status"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="127dp"
-        android:layout_height="80dp"
-        android:text="PNR Status"
-        android:onClick="btnClickAct4"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
+        app:layout_constraintVertical_bias="0.0"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="410dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        android:background="@android:color/system_accent2_400"
-        app:itemIconTint="@color/black"
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="672dp"
         app:itemTextColor="@color/black"
-        app:itemIconSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:itemIconTint="@color/black"
+        android:background="?android:attr/windowBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/menu_two" />
+
+
+    <!--        android:id="@+id/bottom_nav"-->
+<!--        android:layout_width="410dp"-->
+<!--        android:layout_height="72dp"-->
+<!--        android:layout_marginStart="1dp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:background="@android:color/system_accent2_400"-->
+<!--        app:itemIconTint="@color/black"-->
+<!--        app:itemTextColor="@color/black"-->
+<!--        app:itemIconSize="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button2"-->
+<!--        app:layout_constraintVertical_bias="1.0"-->
+<!--        app:menu="@menu/menu_two" />-->
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

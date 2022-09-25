@@ -7,6 +7,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,6 +15,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -29,14 +32,16 @@ import java.util.List;
 
 public class booktickets extends AppCompatActivity {
     TextView dateView,timeView, alarm, person;
-    EditText source,destination;
+    EditText source,destination,passenger,age,number;
     Button dateButton,timeButton,bookTicket;
+    RadioGroup rdg;
+    RadioButton rb1,rb2,rb3;
     ToggleButton acToggle;
     SwitchCompat type;
     int year,month,day,hour,minute;
     FloatingActionButton fabbtn, alarmfab, personfab;
     Boolean isAllFabVisible;
-    String src,destn,switchText;
+    String src,destn,switchText,textVal1,textVal2,textVal3,selectedType;
 
 
     @Override
@@ -45,8 +50,15 @@ public class booktickets extends AppCompatActivity {
         setContentView(R.layout.activity_booktickets);
         dateView = (TextView)findViewById(R.id.date_text);
         timeView = (TextView)findViewById(R.id.time_text);
+        passenger = (EditText)findViewById(R.id.passenger);
+        age = (EditText)findViewById(R.id.age);
+        number = (EditText)findViewById(R.id.number);
         source = (EditText)findViewById(R.id.source_text);
         destination = (EditText)findViewById(R.id.destination_text);
+        rdg = (RadioGroup)findViewById(R.id.rdg);
+        rb1 = (RadioButton)findViewById(R.id.radioButton);
+        rb2 = (RadioButton)findViewById(R.id.radioButton2);
+        rb3 = (RadioButton)findViewById(R.id.radioButton3);
         dateButton = (Button)findViewById(R.id.date_button);
         timeButton = (Button)findViewById(R.id.time_button);
         bookTicket = (Button)findViewById(R.id.bookTicket_button);
@@ -57,6 +69,20 @@ public class booktickets extends AppCompatActivity {
         personfab = (FloatingActionButton)findViewById(R.id.add_person_fab);
         alarm = (TextView)findViewById(R.id.add_alarm_action_text);
         person = (TextView)findViewById(R.id.add_person_action_text);
+//        rb1.setSelected(true);
+        rdg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup,int i){
+                if(i==R.id.radioButton){
+                    selectedType = rb1.getText().toString();
+                }else if(i==R.id.radioButton2){
+                    selectedType = rb2.getText().toString();
+                }else{
+                    selectedType = rb3.getText().toString();
+                }
+            }
+            });
+
 
         alarmfab.setVisibility(View.GONE);
         personfab.setVisibility(View.GONE);
@@ -108,8 +134,24 @@ public class booktickets extends AppCompatActivity {
         bookTicket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                src = source.getText().toString();
-                destn = destination.getText().toString();
+                textVal1 = passenger.getText().toString().trim();
+                textVal2 = age.getText().toString().trim();
+                textVal3 = number.getText().toString().trim();
+//                selectedType1 = rb1.getText().toString().trim();
+//                selectedType2 = rb2.getText().toString().trim();
+//                selectedType3 = rb3.getText().toString().trim();
+                src = source.getText().toString().trim();
+                destn = destination.getText().toString().trim();
+                Bundle bundle  = new Bundle();
+                bundle.putString("Name",textVal1);
+                bundle.putString("Age",textVal2);
+                bundle.putString("Number",textVal3);
+                bundle.putString("Source",src);
+                bundle.putString("Destination",destn);
+//                bundle.putString("Gender",selectedType1);
+//                bundle.putString("Gender",selectedType2);
+//                bundle.putString("Gender",selectedType3);
+
                 if(type.isChecked()){
                     switchText = "Non AC";
                 }
@@ -126,8 +168,11 @@ public class booktickets extends AppCompatActivity {
                             public void onClick(DialogInterface arg0, int arg1)
 
                             {
+                                Intent intent = new Intent(booktickets.this, tickets.class);
+                                intent.putExtras(bundle);
+                                startActivity(intent);
 
-                                Toast.makeText(booktickets.this,"Ticket Booked\n"+"From: "+src+"\nTo: "+destn+"\n"+switchText+" Coach",Toast.LENGTH_LONG).show();
+//                                Toast.makeText(booktickets.this,"Ticket Booked\n"+"From: "+src+"\nTo: "+destn+"\n"+switchText+" Coach",Toast.LENGTH_LONG).show();
                             }
                         });
 

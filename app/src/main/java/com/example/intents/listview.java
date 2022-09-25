@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -42,8 +43,8 @@ public class listview extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()) {
             case R.id.sort:
-                Toast.makeText(this, "Sorted", Toast.LENGTH_SHORT).show();
-                return true;
+                Intent i=new Intent(this,listview2.class);
+                startActivity(i);
             case R.id.cal:
 //                Toast.makeText(this,"Calender", Toast.LENGTH_SHORT).show();
                 Calendar calendar = Calendar.getInstance();
@@ -93,7 +94,7 @@ public class listview extends AppCompatActivity {
         l.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(listview.this,"clicked items"+""+arrayList.get(i).toString(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(listview.this,""+arrayList.get(i).toString(),Toast.LENGTH_SHORT).show();
             }
         });
 

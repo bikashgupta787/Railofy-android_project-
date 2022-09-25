@@ -30,6 +30,7 @@
 <!--        app:layout_constraintTop_toTopOf="parent">-->
 
         <RadioGroup
+            android:id="@+id/rdg"
             android:layout_width="397dp"
             android:layout_height="71dp"
             android:orientation="horizontal"
@@ -137,6 +138,7 @@
             android:id="@+id/time_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
             android:text="Time"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -151,6 +153,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="41dp"
+        android:backgroundTint="@color/black"
         android:text="Book"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -163,6 +166,7 @@
             android:id="@+id/date_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
             android:text="Date"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -171,23 +175,23 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.61" />
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/actoggle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:layout_marginEnd="115dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textOff="AC"
-            android:textOn="Non-AC"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.293"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.807" />
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/actoggle"
+        android:layout_width="48dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="115dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textOff="AC"
+        android:textOn="Non-AC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
 
-        <TextView
+    <TextView
             android:id="@+id/time_text"
             android:layout_width="118dp"
             android:layout_height="29dp"
@@ -336,11 +340,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="3dp"
         android:text="AC"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/actoggle"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/time_button" />
 
@@ -352,13 +357,13 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/checkBox"
         app:layout_constraintEnd_toStartOf="@+id/add_alarm_action_text"
-        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toEndOf="@+id/actoggle"
         app:layout_constraintTop_toBottomOf="@+id/time_text"
-        app:layout_constraintVertical_bias="0.727" />
+        app:layout_constraintVertical_bias="0.841" />
 
 
-<!--    </ScrollView>-->
+    <!--    </ScrollView>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout><!--</LinearLayout>-->
