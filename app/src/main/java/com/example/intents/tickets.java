@@ -38,20 +38,20 @@ public class tickets extends AppCompatActivity {
             val3 = bundle.getString("Number");
             val4 = bundle.getString("Source");
             val5 = bundle.getString("Destination");
-            val6 = bundle.getString("Gender");
+//            val6 = bundle.getString("Gender");
             btnnotify = findViewById(R.id.notify);
             txtview1 = (TextView) findViewById(R.id.passname);
             txtview2 = (TextView) findViewById(R.id.passage);
             txtview3 = (TextView) findViewById(R.id.passnumber);
             txtview4 = (TextView) findViewById(R.id.src);
             txtview5 = (TextView) findViewById(R.id.dest);
-            txtview6 = (TextView) findViewById(R.id.passgender);
+//            txtview6 = (TextView) findViewById(R.id.passgender);
             txtview1.setText(val1);
             txtview2.setText(val2);
             txtview3.setText(val3);
             txtview4.setText(val4);
             txtview5.setText(val5);
-            txtview6.setText(val6);
+//            txtview6.setText(val6);
         }
     }
 
@@ -65,9 +65,9 @@ public class tickets extends AppCompatActivity {
         PendingIntent pendingIntent = PendingIntent.getActivity(tickets.this,(int) Calendar.getInstance().getTimeInMillis(),i,0);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(tickets.this,"My Notification");
-        builder.setSmallIcon(R.drawable.addperson);
+        builder.setSmallIcon(R.drawable.ic_save);
         builder.setContentTitle("Your ticket is downloaded");
-        builder.setStyle(bigPictureStyle).addAction(R.drawable.addperson,"Show ticket",pendingIntent);
+        builder.setStyle(bigPictureStyle).addAction(R.drawable.ic_save,"Show ticket",pendingIntent);
 
         notificationManager.notify(0,builder.build());
 

@@ -106,21 +106,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.574" />
 
-    <TextView
-        android:id="@+id/passgender"
-        android:layout_width="205dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:hint="Gender"
-        android:inputType="textPersonName"
-        android:textColor="#0B0A0A"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.398"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
+<!--    <TextView-->
+<!--        android:id="@+id/passgender"-->
+<!--        android:layout_width="205dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Gender"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:textColor="#0B0A0A"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.398"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.669" />-->
 
     <Button
         android:id="@+id/notify"
